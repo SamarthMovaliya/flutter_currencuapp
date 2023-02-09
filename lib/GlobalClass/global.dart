@@ -18,9 +18,10 @@ class global {
         result: data['result']);
   }
 }
-
+bool isIos=false;
 dynamic to = 'INR';
 dynamic from = 'USD';
+dynamic amt = 1;
 List allCountry = [
   "AED",
   "AFN",

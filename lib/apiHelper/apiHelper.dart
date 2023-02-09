@@ -8,9 +8,9 @@ class apiHelper {
 
   static final apiHelper api = apiHelper._();
 
-  fetchCurrencyData({dynamic From, dynamic To, dynamic amount}) async {
+  fetchCurrencyData({dynamic From, dynamic To, dynamic amount=1}) async {
     http.Response res = await http.get(Uri.parse(
-        'https://api.exchangerate.host/convert?from=$From&to=$To&amount=4'));
+        'https://api.exchangerate.host/convert?from=$From&to=$To&amount=${amount}'));
     print(from);
     print(to);
     print(res.body);
